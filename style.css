@@ -70,8 +70,10 @@ p{
     font-family: poppinslight;
 }
 
-img{
-    width: 70px;
+.logo{
+    width: 400px;
+    height: 300px;
+    background-image: url(imagem/Logo.png);
 }
 
 form{
@@ -101,3 +103,6 @@ input{
 }
 
 
+.fundo{
+    background-size: auto;
+}
