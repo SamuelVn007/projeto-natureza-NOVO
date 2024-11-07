@@ -2,15 +2,20 @@
     --branco: rgb(255, 255, 255);
     --preto: rgb(0, 0, 0);
     --vermelho: rgb(246, 8, 8);
+    --purple: rgb(132, 14, 201);
 }
 
 body {
-    background-color: rgb(34, 34, 34);
-    color: white;
+    background: rgb(34, 34, 34) url('imagem/cataratas.png') center / cover no-repeat;
+    color: var(--branco);
     font-family: poppinsregular;
     max-width: 1200px;
     margin: 0 auto;
     padding: 15px;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 header {
@@ -18,11 +23,15 @@ header {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    width: 100%;
+    position: relative;
+    z-index: 1;
 }
 
 .inicio {
     flex-direction: column;
     line-height: 10px;
+    text-align: center;
 }
 
 li {
@@ -31,44 +40,37 @@ li {
 }
 
 a {
-    color: white;
+    color: var(--branco);
 }
 
 a:hover {
-    color: rgb(132, 14, 201);
+    color: var(--purple);
     transition: 0.3s all;
 }
 
-#inscreva-se-btn {
-    border: 2px solid rgb(132, 14, 201);
-    padding: 10px;
-    border-radius: 15px;
-}
 
 #inscreva-se-btn:hover {
-    background-color: rgb(132, 14, 201);
-    color: white;
+    background-color: var(--purple);
+    color: var(--branco);
 }
 
 h1 {
     font-weight: 200;
-
 }
 
 main {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+    align-items: center;
     margin-top: 50px;
     font-size: large;
     line-height: 180px;
-    text-align: justify;
 }
 
 h2 {
     font-size: 56px;
     line-height: 10px;
     font-family: poppinsmedium;
-
 }
 
 span {
@@ -91,13 +93,14 @@ form {
     display: flex;
     flex-direction: column;
     width: 70%;
+    align-items: center;
 }
 
 form [type="submit"] {
     height: 50px;
     width: 50%;
-    background-color: rgb(132, 14, 201);
-    color: white;
+    background-color: var(--purple);
+    color: var(--branco);
     font-weight: bold;
 }
 
@@ -112,21 +115,8 @@ input {
     border-radius: 20px;
     border: none;
     font-size: 15px;
-}
-
-
-body {
-    margin: 0;
-    padding: 0;
-    background-image: url('imagem/cataratas.png');
-    background-size: cover;
-    background-position: center;
-    height: 100vh;
-}
-
-header {
-    position: relative;
-    z-index: 1;
+    width: 80%;
+    text-align: center;
 }
 
 nav ul {
@@ -138,5 +128,3 @@ nav ul {
 nav li {
     margin: 0 15px;
 }
-
-.barra
